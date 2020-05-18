@@ -53,7 +53,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	<!--RTL version:<link href="<?php base_url() ?>assets/vendors/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
 
 	<!--end::Page Vendors Styles -->
-	<link rel="shortcut icon" href="<?php base_url() ?>assets/demo/demo11/media/img/logo/favicon.ico" />
+	<link rel="shortcut icon" href="<?php base_url() ?>assets/demo/default/media/img/logo/alfamart.png" />
 </head>
 <!-- begin::Body -->
 <body class="m-content--skin- m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-light m-aside--offcanvas-default">

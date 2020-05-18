@@ -44,7 +44,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!--RTL version:<link href="<?php echo base_url() ?>assets/demo/default/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
 
         <!--end::Global Theme Styles -->
-        <link rel="shortcut icon" href="<?php echo base_url() ?>assets/demo/default/media/img/logo/favicon.ico" />
+        <link rel="shortcut icon" href="<?php echo base_url() ?>assets/demo/default/media/img/logo/alfamart.png" />
     </head>
 
     <!-- end::Head -->
