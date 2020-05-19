@@ -12,4 +12,16 @@ class User_m extends CI_Model
         $query = $this->db->get();
         return $query;
     }
+
+    // Perintah menampilkan data user sesuai id yang login
+    public function get($id = null)
+    {
+        $this->db->select('*');
+        $this->db->from('user');
+        if ($id != null) {
+            $this->db->where('user_id', $id);
+        }
+        $query = $this->db->get();
+        return $query;
+    }
 }

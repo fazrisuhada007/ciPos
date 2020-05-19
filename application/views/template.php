@@ -151,6 +151,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true" m-menu-link-redirect="1"><span class="m-menu__link"><span class="m-menu__link-title"> <span class="m-menu__link-wrap"> <span class="m-menu__link-text">Reports</span> <span class="m-menu__link-badge"><span class="m-badge m-badge--accent">3</span></span> </span></span></span></li>
                                     <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Sales</span></a></li>
                                     <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Stock</span></a></li>
+                                    <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text"></span></a></li>
                                 </ul>
                             </div>
                         </li>
@@ -208,7 +209,9 @@ License: You must have a valid license purchased only from themeforest(the above
     </div>
     <!--end::Page Scripts -->
 </body>
-
 <!-- end::Body -->
 
 </html>
+
+<!-- Perintah untuk menampilkan data user yang login -->
+<!-- <?php echo $this->fungsi->user_login()->username ?> -->

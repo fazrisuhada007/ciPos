@@ -1,3 +1,4 @@
+<!-- Fungsi untuk check user sudah login atau belum -->
 <?php
 
 function check_already_login()
