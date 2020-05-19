@@ -89,7 +89,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="m-login__head">
                             <h3 class="m-login__title">Masuk ke akun Anda</h3>
                         </div>
-                        <form class="m-login__form m-form" action="">
+                        <form class="m-login__form m-form" action="<?php echo base_url('auth/process') ?>" method="post">
                             <div class="form-group m-form__group">
                                 <input class="form-control m-input" type="text" placeholder="Username" name="username" autocomplete="off">
                             </div>
@@ -105,10 +105,10 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                     <div class="col m--align-right">
                                         <a href="javascript:;" id="m_login_forget_password" class="m-link">Forget Password ?</a>
-                                    </div> -->
+                                    </div> id="m_login_signin_submit" -->
                             </div>
                             <div class="m-login__form-action" style="margin-top: 2px;">
-                                <button id="m_login_signin_submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">Sign In</button>
+                                <button type="submit" name="login" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">Sign In</button>
                             </div>
                         </form>
                     </div>
