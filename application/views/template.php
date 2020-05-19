@@ -95,7 +95,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="m-stack__item m-topbar__nav-wrapper">
                                 <ul class="m-topbar__nav m-nav m-nav--inline">
                                     <li class="m-nav__item" style=" display: block; padding-top: 21px; ">
-                                        <a href="<?php echo base_url('login/logout') ?>" class="btn btn-outline-brand m-btn btn-sm">
+                                        <a href="<?php echo base_url('auth/logout') ?>" class="btn btn-outline-brand m-btn btn-sm">
                                             <B>Sign Out</B>
                                         </a>
                                     </li>
@@ -154,11 +154,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                 </ul>
                             </div>
                         </li>
-                        <li class="m-menu__section ">
-                            <h4 class="m-menu__section-text">System</h4>
-                            <i class="m-menu__section-icon flaticon-more-v2"></i>
-                        </li>
-                        <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-users"></i><span class="m-menu__link-text">Users</span></a></li>
+                        <?php if ($this->session->userdata('level') == 1) { ?>
+                            <li class="m-menu__section ">
+                                <h4 class="m-menu__section-text">System</h4>
+                                <i class="m-menu__section-icon flaticon-more-v2"></i>
+                            </li>
+                            <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-users"></i><span class="m-menu__link-text">Users</span></a></li>
+                        <?php } ?>
                     </ul>
                 </div>
 
