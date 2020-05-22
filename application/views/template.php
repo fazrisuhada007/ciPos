@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <head>
     <meta charset="utf-8" />
-    <title>Metronic | Dashboard</title>
+    <title> Dashboard Point of Sale Application</title>
     <meta name="description" content="Latest updates and statistic charts">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
@@ -38,22 +38,25 @@ License: You must have a valid license purchased only from themeforest(the above
     <!--end::Web font -->
 
     <!--begin::Global Theme Styles -->
-    <link href="<?php base_url() ?>assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="<?= site_url() ?>assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
 
-    <!--RTL version:<link href="<?php base_url() ?>assets/vendors/base/vendors.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
-    <link href="<?php base_url() ?>assets/demo/demo11/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <!--RTL version:<link href="<?= site_url() ?>assets/vendors/base/vendors.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+    <link href="<?= site_url() ?>assets/demo/demo11/base/style.bundle.css" rel="stylesheet" type="text/css" />
 
-    <!--RTL version:<link href="<?php base_url() ?>assets/demo/demo11/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+    <!--RTL version:<link href="<?= site_url() ?>assets/demo/demo11/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
 
     <!--end::Global Theme Styles -->
 
     <!--begin::Page Vendors Styles -->
-    <link href="<?php base_url() ?>assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="<?= site_url() ?>assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
 
-    <!--RTL version:<link href="<?php base_url() ?>assets/vendors/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+    <!--RTL version:<link href="<?= site_url() ?>assets/vendors/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
 
     <!--end::Page Vendors Styles -->
-    <link rel="shortcut icon" href="<?php base_url() ?>assets/demo/default/media/img/logo/alfamart.png" />
+    <link rel="shortcut icon" href="<?= site_url() ?>assets/demo/default/media/img/logo/alfamart.png" />
+
+    <!-- perintah untuk menampilkan datatable -->
+    <link href="<?php echo base_url() ?>assets/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 </head>
 <!-- begin::Body -->
 
@@ -68,8 +71,8 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="m-stack__item m-brand  m-brand--skin-light ">
                         <div class="m-stack m-stack--ver m-stack--general m-stack--fluid">
                             <div class="m-stack__item m-stack__item--middle m-brand__logo">
-                                <a href="index.html" class="m-brand__logo-wrapper">
-                                    <img alt="" src="<?php base_url() ?>assets/demo/demo11/media/img/logo/logo.png" />
+                                <a href="<a href=" <?php echo base_url('dashboard') ?>" class="m-brand__logo-wrapper">
+                                    <img alt="" src="<?= site_url() ?>assets/demo/demo11/media/img/logo/alfamart.png" />
                                 </a>
                             </div>
                             <div class="m-stack__item m-stack__item--middle m-brand__tools">
@@ -94,7 +97,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
                             <div class="m-stack__item m-topbar__nav-wrapper">
                                 <ul class="m-topbar__nav m-nav m-nav--inline">
-                                    <li class="m-nav__item" style=" display: block; padding-top: 21px; ">
+                                    <li class="m-nav__item " style=" display: block; padding-top: 20px; ">
                                         <a href="<?php echo base_url('auth/logout') ?>" class="btn btn-outline-brand m-btn btn-sm">
                                             <B>Sign Out</B>
                                         </a>
@@ -122,7 +125,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             <h4 class="m-menu__section-text">Main Navigation</h4>
                             <i class="m-menu__section-icon flaticon-more-v2"></i>
                         </li>
-                        <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-layers"></i><span class="m-menu__link-text">Dashboard</span></a></li>
+                        <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="<?php echo base_url('dashboard') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-layers"></i><span class="m-menu__link-text">Dashboard</span></a></li>
                         <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-truck"></i><span class="m-menu__link-text">Suppliers</span></a></li>
                         <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-customer"></i><span class="m-menu__link-text">Customers</span></a></li>
                         <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover" m-menu-link-redirect="1"><a href="javascript:;" class="m-menu__link m-menu__toggle"><i class="m-menu__link-icon flaticon-open-box"></i><span class="m-menu__link-title"> <span class="m-menu__link-wrap"> <span class="m-menu__link-text">Products</span> <span class="m-menu__link-badge"></span> </span></span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
@@ -160,7 +163,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <h4 class="m-menu__section-text">System</h4>
                                 <i class="m-menu__section-icon flaticon-more-v2"></i>
                             </li>
-                            <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-users"></i><span class="m-menu__link-text">Users</span></a></li>
+                            <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1"><a href="<?php echo base_url('user') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-users"></i><span class="m-menu__link-text">Users</span></a></li>
                         <?php } ?>
                     </ul>
                 </div>
@@ -178,7 +181,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
                             <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
                                 <span class="m-footer__copyright">
-                                    2017 &copy; Metronic theme by <a href="https://keenthemes.com" class="m-link">Keenthemes</a>
+                                    2020 &copy; Metronic theme by <a href="https://keenthemes.com" class="m-link">Keenthemes</a>
                                 </span>
                             </div>
                         </div>
@@ -192,18 +195,27 @@ License: You must have a valid license purchased only from themeforest(the above
                 <i class="la la-arrow-up"></i>
             </div>
             <!--begin::Global Theme Bundle -->
-            <script src="<?php base_url() ?>assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
-            <script src="<?php base_url() ?>assets/demo/demo11/base/scripts.bundle.js" type="text/javascript"></script>
+            <script src="<?= site_url() ?>assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+            <script src="<?= site_url() ?>assets/demo/demo11/base/scripts.bundle.js" type="text/javascript"></script>
 
             <!--end::Global Theme Bundle -->
 
             <!--begin::Page Vendors -->
-            <script src="<?php base_url() ?>assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+            <script src="<?= site_url() ?>assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
 
             <!--end::Page Vendors -->
 
             <!--begin::Page Scripts -->
-            <script src="<?php base_url() ?>assets/app/js/dashboard.js" type="text/javascript"></script>
+            <script src="<?= site_url() ?>assets/app/js/dashboard.js" type="text/javascript"></script>
+
+            <!-- perintah untuk menampilkan datatable -->
+            <script src="<?php echo base_url() ?>assets/datatables/datatables.bundle.js" type="text/javascript"></script>
+            <script src="<?php echo base_url() ?>assets/js/demo11/pages/crud/datatables/basic/scrollable.js" type="text/javascript"></script>
+            <script>
+                $(document).ready(function() {
+                    $('#m_table_2').DataTable();
+                });
+            </script>
         </div>
     </div>
     </div>

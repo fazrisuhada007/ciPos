@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <head>
     <meta charset="utf-8" />
-    <title>Metronic | Login Page - 5</title>
+    <title>Dashboard Login</title>
     <meta name="description" content="Latest updates and statistic charts">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
@@ -91,7 +91,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         </div>
                         <form class="m-login__form m-form" action="<?php echo base_url('auth/process') ?>" method="post">
                             <div class="form-group m-form__group">
-                                <input class="form-control m-input" type="text" placeholder="Username" name="username" autocomplete="off">
+                                <input class="form-control m-input" type="text" placeholder="Username" name="username" autocomplete="off" autofocus>
                             </div>
                             <div class="form-group m-form__group">
                                 <input class="form-control m-input m-login__form-input--last" type="Password" placeholder="Password" name="password">

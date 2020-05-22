@@ -1,15 +1,29 @@
-<!-- BEGIN: Subheader -->
-<div class="m-subheader ">
-	<div class="d-flex align-items-center">
-		<div class="mr-auto">
-			<h3 class="m-subheader__title ">Dashboard</h3>
-		</div>
-	</div>
-</div>
-
 <!-- END: Subheader -->
 <div class="m-content">
-
+	<div class="m-alert m-alert--icon m-alert--air m-alert--square alert alert-dismissible m--margin-bottom-30" role="alert">
+		<div class="m-alert__icon">
+			<i class="flaticon-exclamation m--font-brand"></i>
+		</div>
+		<div class="m-alert__text">
+			<?php
+			$tanggal = mktime(date("m"), date("d"), date("Y"));
+			echo "Tanggal : <b>" . date("d-M-Y", $tanggal) . "</b> ";
+			date_default_timezone_set('Asia/Jakarta');
+			$jam = date("H:i:s");
+			echo "| Pukul : <b>" . $jam . " " . "</b>";
+			$a = date("H");
+			if (($a >= 6) && ($a <= 11)) {
+				echo "<b>, Selamat Pagi !!</b>";
+			} else if (($a > 11) && ($a <= 15)) {
+				echo ", Selamat Siang !!";
+			} else if (($a > 15) && ($a <= 18)) {
+				echo ", Selamat Sore !!";
+			} else {
+				echo ", <b> Selamat Malam </b>";
+			}
+			?>
+		</div>
+	</div>
 	<!--begin:: Widgets/Stats-->
 	<div class="m-portlet ">
 		<div class="m-portlet__body  m-portlet__body--no-padding">
