@@ -71,19 +71,22 @@
                                 <!-- <td><?php echo $data->address ?></td> -->
                                 <td><?php echo $data->level == 1 ? "Admin" : "Kasir" ?></td>
                                 <td style="text-align: center;">
-                                    <a href="" class="btn btn-info btn-sm m-btn  m-btn m-btn--icon btn-xs btn-width btn-line-heigh-mobile" style="margin-left:1px; margin-top: 3px">
-                                        <span>
-                                            <i class="la la-edit"></i>
-                                            <span style="width: 42px; display: inline-block;">Edit</span>
-                                        </span>
-                                    </a>
+                                    <form action="<?= site_url('user/del') ?>" method="post">
+                                        <a href="<?= site_url('user/edit/' . $data->user_id) ?>" class="btn btn-info btn-sm m-btn  m-btn m-btn--icon btn-xs btn-width btn-line-heigh-mobile" style="margin-left:1px; margin-top: 3px">
+                                            <span>
+                                                <i class="la la-edit"></i>
+                                                <span style="width: 42px; display: inline-block;">Edit</span>
+                                            </span>
+                                        </a>
 
-                                    <a href="" class="tombol-hapus btn btn-danger btn-sm m-btn  m-btn m-btn--icon btn-xs btn-width btn-line-heigh-mobile" style="margin-left:1px; margin-top: 3px;">
-                                        <span>
-                                            <i class="la la-trash"></i>
-                                            <span>Hapus</span>
-                                        </span>
-                                    </a>
+                                        <input type="hidden" name="user_id" value="<?= $data->user_id ?>">
+                                        <button onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?')" class="btn btn-danger btn-sm m-btn  m-btn m-btn--icon btn-xs btn-width btn-line-heigh-mobile" style="margin-left:1px; margin-top: 3px;">
+                                            <span>
+                                                <i class="la la-trash"></i>
+                                                <span>Hapus</span>
+                                            </span>
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                         <?php } ?>
