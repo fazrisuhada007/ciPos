@@ -158,7 +158,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 </ul>
                             </div>
                         </li>
-                        <?php if ($this->session->userdata('level') == 1) { ?>
+                        <?php if ($this->fungsi->user_login()->level == 1) { ?>
                             <li class="m-menu__section ">
                                 <h4 class="m-menu__section-text">System</h4>
                                 <i class="m-menu__section-icon flaticon-more-v2"></i>
