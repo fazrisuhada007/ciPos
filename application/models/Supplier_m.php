@@ -30,7 +30,7 @@ class Supplier_m extends CI_Model
         $params['name']         = $post['supplier_name'];
         $params['phone']        = $post['phone'];
         $params['address']      = $post['address'] != "" ? $post['address'] : null;
-        $params['description']  = $post['description'] != "" ? $post['address'] : null;
+        $params['description']  = $post['description'] != "" ? $post['description'] : null;
         $params['updated']      = date('Y-m-d H:i:s');
         $this->db->where('supplier_id', $post['supplier_id']);
         $this->db->update('supplier', $params);
